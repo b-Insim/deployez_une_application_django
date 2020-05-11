@@ -7,7 +7,7 @@ before_script:
 
 branches:
     only:
-        - staging
+        - Master
 
 env: DJANGO_SETTINGS_MODULE="disquaire_project.settings"
 
