@@ -89,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
         'NAME': 'disquaire', # le nom de notre base de données créée précédemment
-        'USER': 'celinems', # attention : remplacez par votre nom d'utilisateur !!
-        'PASSWORD': '',
-        'HOST': '',
+        'USER': 'boleynk', # attention : remplacez par votre nom d'utilisateur !!
+        'PASSWORD': 'boleyn',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -141,6 +141,7 @@ INTERNAL_IPS = ['127.0.0.1']
 
 
 if os.environ.get('ENV') == 'PRODUCTION':
+    
 
     STATIC_ROOT = os.path.join(BASE_ROOT, 'staticfiles')
 
